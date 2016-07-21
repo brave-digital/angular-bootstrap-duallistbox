@@ -6,10 +6,10 @@
     "email": "francescopontillo@gmail.com",
     "url": "https://github.com/frapontillo"
   },
-  "homepage": "https://github.com/frapontillo/angular-bootstrap-duallistbox",
+  "homepage": "https://github.com/brave-digital/angular-material-duallistbox",
   "repository": {
     "type": "git",
-    "url": "git@github.com:frapontillo/angular-bootstrap-duallistbox.git"
+    "url": "git@github.com:brave-digital/angular-material-duallistbox.git"
   },
   "licenses": [
     {
