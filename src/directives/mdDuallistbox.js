@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('frapontillo.bootstrap-duallistbox')
-  .directive('bsDuallistbox', function ($compile, $timeout) {
+angular.module('brave.material-duallistbox')
+  .directive('mdDuallistbox', function ($compile, $timeout) {
     return {
       restrict: 'A',
       require: 'ngModel',
@@ -18,7 +18,6 @@ angular.module('frapontillo.bootstrap-duallistbox')
 
         // The attribute names to $observe with related functions to call
         var attributes = {
-          'bootstrap2': {changeFn: 'setBootstrap2Compatible', transformFn: getBooleanValue},
           'postfix': 'setHelperSelectNamePostfix',
           'selectMinHeight': {changeFn: 'setSelectOrMinimalHeight', defaultValue: 100},
 
@@ -135,7 +134,7 @@ angular.module('frapontillo.bootstrap-duallistbox')
               var actualFunction = getAttributeChangeFunction(attributeName);
               var actualValue = getAttributeValueOrDefault(attributeName);
               // Depending on the attribute, call the right function (and always refresh)
-              element.bootstrapDualListbox(actualFunction, actualValue, true);
+              element.materialDualListbox(actualFunction, actualValue, true);
             });
           });
         };
@@ -146,7 +145,7 @@ angular.module('frapontillo.bootstrap-duallistbox')
         var refresh = function() {
           // TODO: consider removing $timeout calls
           $timeout(function () {
-            element.bootstrapDualListbox('refresh');
+            element.materialDualListbox('refresh');
           });
         };
 
@@ -170,8 +169,7 @@ angular.module('frapontillo.bootstrap-duallistbox')
           });
 
           // Init the plugin
-          dualListBox = element.bootstrapDualListbox({
-            bootstrap2Compatible: defaults.bootstrap2,
+          dualListBox = element.materialDualListbox({
             filterTextClear: defaults.filterClear,
             filterPlaceHolder: defaults.filterPlaceholder,
             moveSelectedLabel: defaults.moveSelectedLabel,
@@ -194,7 +192,7 @@ angular.module('frapontillo.bootstrap-duallistbox')
           });
 
           // Inject the ng-model into the filters and re-compile them
-          var container = element.bootstrapDualListbox('getContainer');
+          var container = element.materialDualListbox('getContainer');
           var filterNonSelectedInput = container.find('.box1 .filter');
           filterNonSelectedInput.attr('ng-model', attrs.filterNonSelected);
           $compile(filterNonSelectedInput)(scope);
@@ -208,7 +206,7 @@ angular.module('frapontillo.bootstrap-duallistbox')
 
         // On destroy, collect ya garbage
         scope.$on('$destroy', function () {
-          element.bootstrapDualListbox('destroy');
+          element.materialDualListbox('destroy');
         });
       }
     };

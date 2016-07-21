@@ -1,1 +1,1 @@
-angular.module('frapontillo.bootstrap-duallistbox', []);
+angular.module('brave.material-duallistbox', []);
