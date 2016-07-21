@@ -1,5 +1,5 @@
 {
-  "name": "angular-bootstrap-duallistbox",
+  "name": "angular-material-duallistbox",
   "version": "0.1.0",
   "author": {
     "name": "Francesco Pontillo",
@@ -17,7 +17,7 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   ],
-  "main": "./dist/angular-bootstrap-duallistbox.js",
+  "main": "./dist/angular-material-duallistbox.js",
   "dependencies": {
     "angular": "~1.4.0",
     "jquery": "~2.0.3",
