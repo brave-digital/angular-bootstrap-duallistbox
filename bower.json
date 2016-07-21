@@ -21,8 +21,7 @@
   "dependencies": {
     "angular": "~1.4.0",
     "jquery": "~2.0.3",
-    "bootstrap": ">=2.3.2",
-    "bootstrap-duallistbox": "3.0.2"
+    "material-duallistbox": "git@github.com:brave-digital/material-duallistbox.git"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.0",
