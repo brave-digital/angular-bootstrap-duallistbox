@@ -9,7 +9,7 @@
   "homepage": "https://github.com/brave-digital/angular-material-duallistbox",
   "repository": {
     "type": "git",
-    "url": "git@github.com:brave-digital/angular-material-duallistbox.git"
+    "url": "git@github.com:brave-digital/angular-material-duallistbox.git#3.0.6"
   },
   "licenses": [
     {
@@ -21,7 +21,7 @@
   "dependencies": {
     "angular": "~1.4.0",
     "jquery": "~2.0.3",
-    "material-duallistbox": "git@github.com:brave-digital/material-duallistbox.git#3.0.6"
+    "material-duallistbox": "git@github.com:brave-digital/material-duallistbox.git#dev-material"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.0",
